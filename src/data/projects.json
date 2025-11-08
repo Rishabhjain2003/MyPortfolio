@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Portfolio",
+    "description": null,
+    "image": "https://opengraph.githubassets.com/aef3d007bc02ae92d756943df8a51288c557970f407b3f51fcc2f42a6de82777/Rishabhjain2003/Portfolio",
+    "github": "https://github.com/Rishabhjain2003/Portfolio",
+    "demo": null
+  },
+  {
+    "title": "Codecast",
+    "description": "Real-time collaborative code editor with multi-user support in shared rooms, featuring instant synchronization across clients with syntax highlighting.",
+    "image": "https://repository-images.githubusercontent.com/1070810466/4d02594f-843d-4d74-9d1a-60524fe316c0",
+    "github": "https://github.com/Rishabhjain2003/Codecast",
+    "demo": ""
+  },
+  {
+    "title": "LiveLocationTracker",
+    "description": "Real-time location streaming application that tracks users' positions via Socket.IO, using browser Geolocation API and rendering updates on interactive maps.",
+    "image": "https://repository-images.githubusercontent.com/1089560160/9160869d-f9e0-4ae7-bbfa-8b41997358c9",
+    "github": "https://github.com/Rishabhjain2003/LiveLocationTracker",
+    "demo": ""
+  }
+]
