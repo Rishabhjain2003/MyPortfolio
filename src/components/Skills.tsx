@@ -8,43 +8,53 @@ const skillCategories = [
   // Programming Languages
   { category: "Python", icon: Code2 },
   { category: "JavaScript (ES6+)", icon: Code2 },
+  { category: "TypeScript", icon: Code2 },
   { category: "Java", icon: Code2 },
   { category: "C/C++", icon: Code2 },
   { category: "SQL", icon: Database },
 
-  // Frameworks & Libraries
-  { category: "React.js", icon: Palette },
-  { category: "Node.js (Express)", icon: Server },
-  { category: "TensorFlow", icon: Cpu },
-  { category: "PyTorch", icon: Cpu },
-  { category: "Pandas/NumPy", icon: Layers },
-
   // Backend & APIs
+  { category: "Node.js (Express)", icon: Server },
+  { category: "FastAPI", icon: Server },
   { category: "REST APIs", icon: Globe },
-  { category: "Socket.io", icon: Server },
+  { category: "WebSockets (Socket.IO)", icon: Server },
   { category: "Microservices", icon: Server },
+  { category: "Multithreading", icon: Cpu },
+  { category: "Caching", icon: Layers },
+  { category: "Rate Limiting", icon: Shield },
 
   // Frontend
-  { category: "HTML5/CSS3", icon: Palette },
-  { category: "Responsive Design", icon: Palette },
-  { category: "Next.js", icon: Globe },
-  { category: "Storybook", icon: Palette },
+  { category: "React.js", icon: Palette },
+  { category: "HTML5", icon: Palette },
+  { category: "CSS3", icon: Palette },
+  { category: "Tailwind CSS", icon: Palette },
 
   // Databases
-  { category: "PostgreSQL", icon: Database },
-  { category: "MySQL", icon: Database },
   { category: "MongoDB", icon: Database },
+  { category: "MySQL", icon: Database },
 
   // Security
-  { category: "JWT Auth", icon: Lock },
-  { category: "RBAC", icon: Shield },
-  { category: "Security Practices", icon: Shield },
+  { category: "JWT Authentication", icon: Lock },
+  { category: "OAuth", icon: Shield },
+  { category: "Role-Based Access Control (RBAC)", icon: Shield },
+  { category: "CORS", icon: Shield },
+  { category: "Input Validation", icon: Shield },
 
-  // Tools & DevOps
-  { category: "Git", icon: GitBranch },
+  // AI & ML
+  { category: "TensorFlow", icon: Cpu },
+  { category: "PyTorch", icon: Cpu },
+  { category: "LSTM Forecasting", icon: Cpu },
+  { category: "RAG Pipelines", icon: Layers },
+  { category: "Gemini/OpenAI APIs", icon: Cpu },
+
+  // Infrastructure & Networking
+  { category: "Linux", icon: Terminal },
   { category: "Docker", icon: Container },
-  { category: "Agile", icon: Users },
-  { category: "CI/CD", icon: Terminal }
+  { category: "Git", icon: GitBranch },
+  { category: "CI/CD", icon: Terminal },
+  { category: "TCP/IP", icon: Globe },
+  { category: "OSPF", icon: Globe },
+  { category: "BGP", icon: Globe }
 ];
 
 export const Skills = () => {
