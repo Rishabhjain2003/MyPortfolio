@@ -8,23 +8,26 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Illustration */}
           <div className="relative animate-slide-up flex items-center justify-center lg:justify-end">
-          <img 
-            src="/aboutme-illustration.svg" 
-            alt="Developer Illustration"
-            className="w-full max-w-2xl h-auto"
-          />
-        </div>
+            <img
+              src="/aboutme-illustration.svg"
+              alt="Developer Illustration"
+              className="w-full max-w-2xl h-auto"
+            />
+          </div>
 
           {/* Right - Content */}
           <div className="animate-slide-up">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               About <span className="font-normal">Me</span>
             </h2>
-            
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm a passionate Full-Stack Developer & ML Engineer with expertise in building scalable web applications 
-              and implementing machine learning solutions. Currently pursuing M.Tech in Computer Science at MANIT Bhopal, 
-              I combine academic knowledge with hands-on experience from multiple internships and freelance projects.
+
+            <p className="text-muted-foreground mb-6 leading-relaxed text-justify">
+              I build backend systems that replace manual processes and scale under pressure — automation
+              pipelines, REST APIs, and deployment tools that teams actually ship to production. At C-DOT,
+              I engineered a configuration automation tool that cut 4G node deployment time by 60%. At Grid
+              Controller of India, I built a national-scale LSTM forecasting pipeline 2× more accurate than
+              the legacy model. Outside internships, I've independently shipped NovaTrade, TechBossAI, and
+              other production-grade systems.
             </p>
 
             <div className="space-y-4">
@@ -37,7 +40,7 @@ export const About = () => {
                     <div>
                       <h3 className="text-lg font-bold mb-1">M.Tech in Computer Science</h3>
                       <p className="text-sm text-muted-foreground">
-                        Maulana Azad National Institute of Technology, Bhopal • 2027
+                        Maulana Azad National Institute of Technology (NIT Bhopal) • 2025–2027
                       </p>
                     </div>
                   </div>
@@ -53,9 +56,10 @@ export const About = () => {
                     <div>
                       <h3 className="text-lg font-bold mb-1">B.Tech in Computer Science</h3>
                       <p className="text-sm text-muted-foreground mb-2">
-                        G.B. Pant Government Engineering College, Delhi • 2025
+                        G.B. Pant Government Engineering College, Delhi • 2021–2025
                       </p>
-                      <p className="text-xs font-medium">🏆 Academic Scholarship (2 consecutive years)</p>
+                      <p className="text-xs font-medium">🏆 Academic Merit Scholarship — 2 consecutive years</p>
+                      <p className="text-xs font-medium">🥇 1st Prize — Delhi Government Ideathon 2022</p>
                     </div>
                   </div>
                 </CardContent>

@@ -5,56 +5,69 @@ import {
 } from "lucide-react";
 
 const skillCategories = [
-  // Programming Languages
+  // Languages
+  { category: "Java", icon: Code2 },
   { category: "Python", icon: Code2 },
   { category: "JavaScript (ES6+)", icon: Code2 },
   { category: "TypeScript", icon: Code2 },
-  { category: "Java", icon: Code2 },
-  { category: "C/C++", icon: Code2 },
   { category: "SQL", icon: Database },
+  { category: "C/C++ (fundamentals)", icon: Code2 },
 
   // Backend & APIs
   { category: "Node.js (Express)", icon: Server },
   { category: "FastAPI", icon: Server },
   { category: "REST APIs", icon: Globe },
+  { category: "OData", icon: Globe },
   { category: "WebSockets (Socket.IO)", icon: Server },
-  { category: "Microservices", icon: Server },
-  { category: "Multithreading", icon: Cpu },
+  { category: "Microservices", icon: Layers },
+  { category: "Event-Driven Architecture", icon: Cpu },
   { category: "Caching", icon: Layers },
   { category: "Rate Limiting", icon: Shield },
-
-  // Frontend
-  { category: "React.js", icon: Palette },
-  { category: "HTML5", icon: Palette },
-  { category: "CSS3", icon: Palette },
-  { category: "Tailwind CSS", icon: Palette },
+  { category: "Distributed Systems", icon: Layers },
+  { category: "Multithreading", icon: Cpu },
 
   // Databases
-  { category: "MongoDB", icon: Database },
+  { category: "PostgreSQL", icon: Database },
   { category: "MySQL", icon: Database },
+  { category: "MongoDB", icon: Database },
+  { category: "Redis", icon: Database },
 
   // Security
-  { category: "JWT Authentication", icon: Lock },
-  { category: "OAuth", icon: Shield },
-  { category: "Role-Based Access Control (RBAC)", icon: Shield },
+  { category: "JWT", icon: Lock },
+  { category: "OAuth 2.0", icon: Shield },
+  { category: "RBAC", icon: Users },
   { category: "CORS", icon: Shield },
   { category: "Input Validation", icon: Shield },
+  { category: "bcrypt", icon: Lock },
 
-  // AI & ML
-  { category: "TensorFlow", icon: Cpu },
-  { category: "PyTorch", icon: Cpu },
-  { category: "LSTM Forecasting", icon: Cpu },
-  { category: "RAG Pipelines", icon: Layers },
-  { category: "Gemini/OpenAI APIs", icon: Cpu },
-
-  // Infrastructure & Networking
-  { category: "Linux", icon: Terminal },
+  // Cloud & DevOps
   { category: "Docker", icon: Container },
   { category: "Git", icon: GitBranch },
   { category: "CI/CD", icon: Terminal },
-  { category: "TCP/IP", icon: Globe },
-  { category: "OSPF", icon: Globe },
-  { category: "BGP", icon: Globe }
+  { category: "Linux", icon: Terminal },
+  { category: "GitHub Actions", icon: GitBranch },
+  { category: "RabbitMQ", icon: Server },
+
+  // Frontend
+  { category: "React.js", icon: Palette },
+  { category: "HTML5 / CSS3", icon: Palette },
+  { category: "Tailwind CSS", icon: Palette },
+
+  // ML & AI
+  { category: "TensorFlow", icon: Cpu },
+  { category: "LSTM Forecasting", icon: Cpu },
+  { category: "3D CNNs / Medical Imaging", icon: Cpu },
+  { category: "RAG Pipelines", icon: Layers },
+  { category: "Gemini / OpenAI APIs", icon: Wrench },
+  { category: "FAISS Embeddings", icon: Cpu },
+
+  // CS Fundamentals
+  { category: "Data Structures & Algorithms", icon: Code2 },
+  { category: "OOP", icon: Code2 },
+  { category: "SOLID & DRY Principles", icon: Code2 },
+  { category: "Operating Systems", icon: Terminal },
+  { category: "Computer Networks", icon: Globe },
+  { category: "SDLC", icon: Wrench },
 ];
 
 export const Skills = () => {

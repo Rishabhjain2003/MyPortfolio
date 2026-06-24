@@ -30,7 +30,7 @@
   {
     "title": "AutoSubAI",
     "description": "Built a CLI tool using yt-dlp and OpenAI Whisper to automatically generate .vtt subtitle files from YouTube videos. Integrated audio extraction, model selection (tiny–large), and optional translation workflows, delivering an end-to-end automated transcription pipeline.",
-    "image": "https://opengraph.githubassets.com/def8172a9d8523725e33a0fff8a89831ea6e47f37ea968bde43c62810ff79c69/Rishabhjain2003/AutoSubAI",
+    "image": "https://repository-images.githubusercontent.com/1167289270/76f99f3d-206e-4d25-bb9e-0b4b95ca02f7",
     "github": "https://github.com/Rishabhjain2003/AutoSubAI",
     "demo": ""
   },

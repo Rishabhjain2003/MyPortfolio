@@ -2,12 +2,20 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const experiences = [
   {
+    company: "Curiate Solutions",
+    logo: "/logos/curiate.png",
+    role: "SDE Intern (Remote)",
+    period: "Oct 2025 - Dec 2025",
+    description:
+      "Built a guest checkout flow using React and Razorpay with cron-based abandoned cart recovery, cutting cart abandonment by 35%. Engineered a Headless CMS pipeline via the Notion API enabling non-technical teams to publish SEO-ready content without code deployments."
+  },
+  {
     company: "Centre for Development of Telematics (C-DOT)",
     logo: "/logos/cdot.png",
     role: "SDE Intern",
     period: "Jan 2025 - Jul 2025",
     description:
-      "Engineered CAT (Python, FastAPI, Pandas) to automate 4G node configuration generation, reducing configuration time by 60% and deployment errors by 30%. Built DPS (MERN) for node versioning and deployment monitoring, and designed a multi-tier rollback workflow to improve fault isolation during critical updates."
+      "Built CAT (Python, FastAPI, Pandas) to generate 4G node .cfg files programmatically, cutting configuration time by 60% and deployment errors by 30%. Developed DPS (MERN Stack) for node versioning and parameter dependency tracking, with automated pushes to the TCS central repository. Designed a multi-tier rollback workflow enabling field teams to flag errors and revert base configurations, compressing resolution time during critical node updates."
   },
   {
     company: "Grid Controller of India Ltd. (Grid-India)",
@@ -15,15 +23,23 @@ const experiences = [
     role: "Intern",
     period: "Aug 2024 - Nov 2024",
     description:
-      "Developed a national-scale LSTM-based load forecasting pipeline ingesting telemetry from 615+ weather stations, achieving 2× higher accuracy over legacy models. Implemented day-ahead and revised prediction workflows to support operational cost optimisation."
+      "Developed a national-scale load-forecasting pipeline using ANNs with LSTM layers, ingesting telemetry from 615+ weather stations and engineering 8 features from high-dimensional inputs — achieving 2× higher accuracy over the legacy model. Formulated day-ahead and intraday R1 prediction workflows to give grid operators precise consumption forecasts for resource allocation."
   },
   {
-    company: "Curiate Solutions",
-    logo: "/logos/curiate.png",
-    role: "SDE Intern (Remote)",
-    period: "Oct 2025 - Dec 2025",
+    company: "Canadian Fellows",
+    logo: "/logos/canadian-fellows.png",
+    role: "Freelance Software Engineer",
+    period: "Nov 2023 - Jul 2024",
     description:
-      "Built a frictionless guest checkout system using React and Razorpay, reducing cart abandonment by 35% via automated recovery workflows. Developed a custom Headless CMS using the Notion API to enable dynamic, SEO-ready content publishing without code deployments."
+      "Built Node.js/Express REST APIs for lead capture, booking, and contact workflows with payload validation and rate limiting. Designed MongoDB schemas with targeted indexing, reducing read latency by 35%. Implemented JWT + RBAC auth with bcrypt and audit logging. Integrated third-party email and booking services via secure API wrappers with centralized secret management."
+  },
+  {
+    company: "The High Vault Security",
+    logo: "/logos/high-vault.png",
+    role: "Freelance Software Engineer",
+    period: "Jan 2023 - Oct 2023",
+    description:
+      "Built versioned REST APIs (Node.js) for enquiries, quotes, and scheduling, documented with OpenAPI spec. Optimized PostgreSQL schemas with composite indexes and prepared statements, reducing endpoint latency by ~50%. Implemented JWT + RBAC with throttling and CORS controls. Structured logging cut incident resolution time by 45%; managed database migrations during deployments."
   },
   {
     company: "Housing & Urban Development Corp. (HUDCO)",
