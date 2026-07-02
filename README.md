@@ -1,96 +1,91 @@
 # Rishabh Jain's Personal Portfolio
 
-![Portfolio Screenshot](public/screenshot.png)
-
 This is the source code for my personal portfolio website, built with **Vite, React, TypeScript, and Tailwind CSS**.
 
-The site is designed to be a clean, modern, and responsive showcase of my skills, experience, and projects. It features a dynamic project section that automatically fetches my pinned repositories from GitHub at build time.
+The site is designed to be a clean, modern, and responsive showcase of my skills, experience, projects, and leadership roles.
 
-**Live Demo:** `https://<your-vercel-domain>.com`
+**Live Demo:** [rishabhjain.vercel.app](https://rishabhjain.vercel.app) *(or your deployed Vercel domain)*
 
 ---
 
 ## ✨ Key Features
 
-* **Modern Stack:** Built with Vite for a blazing-fast development experience.
-* **Beautiful UI:** Styled with Tailwind CSS and shadcn/ui components.
-* **Fully Responsive:** Looks great on all devices, from mobile to desktop.
-* **Dynamic Projects:** The "My Projects" section is not hardcoded. It's generated at build time by a script that fetches my 6 pinned projects from the GitHub GraphQL API.
-* **Centralized Data:** All personal links (Resume, GitHub, LinkedIn) are stored in `src/data/links.json` for easy updates.
+* **Modern Stack:** Built with Vite for a blazing-fast development experience and React 18 for component-driven UI.
+* **Beautiful UI:** Styled with Tailwind CSS and premium shadcn/ui components.
+* **Fully Responsive:** Fluid layouts designed to look stunning on mobile, tablet, and desktop devices.
+* **Projects Showcase:** Displays curated projects loaded dynamically from the centralized [projects.json](file:///Users/rishabhjain/Portfolio/MyPortfolio/src/data/projects.json) file.
+* **Centralized Configuration:** Personal links (Resume, GitHub, LinkedIn) and contact details are stored in [links.json](file:///Users/rishabhjain/Portfolio/MyPortfolio/src/data/links.json) for easy updates.
+* **Automated Redeploys:** Includes a serverless function endpoint ([api/cron.ts](file:///Users/rishabhjain/Portfolio/MyPortfolio/api/cron.ts)) that triggers site redeployment via Vercel Deploy Hooks, ensuring your resume and projects are always up to date.
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Framework:** React
+* **Framework:** React 18
 * **Build Tool:** Vite
 * **Language:** TypeScript
-* **Styling:** Tailwind CSS
-* **UI Components:** shadcn/ui
-* **Icons:** lucide-react
-* **Data Fetching:** Node.js script (at build time)
+* **Styling:** Tailwind CSS & Tailwind CSS Animate
+* **UI Components:** shadcn/ui (Radix UI primitives)
+* **Icons:** Lucide React
+* **State/Data Management:** TanStack React Query
 
 ---
 
 ## ⚙️ Getting Started (Local Development)
 
-To run this project locally, you will need to create a GitHub Personal Access Token to fetch your projects.
-
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Rishabhjain2003/artistic-arc-site.git](https://github.com/Rishabhjain2003/artistic-arc-site.git)
-cd artistic-arc-site
-````
+git clone https://github.com/Rishabhjain2003/MyPortfolio.git
+cd MyPortfolio
+```
 
-### 2\. Install Dependencies
+### 2. Install Dependencies
+
+You can use `npm` or `bun` to install dependencies:
 
 ```bash
 npm install
+# or
+bun install
 ```
 
-### 3\. Set Up Environment Variables
+### 3. Run the Development Server
 
-This is the most important step. The project will not build without these.
-
-1.  Create a file in the root of the project named `.env.local`.
-
-2.  Add your GitHub username and your [GitHub Personal Access Token](https://github.com/settings/tokens) (with `public_repo` scope) to this file.
-
-    ```
-    # .env.local
-    VITE_GITHUB_USERNAME="YourGitHubUsername"
-    VITE_GITHUB_TOKEN="ghp_YourSecretTokenHere"
-    ```
-
-    **Note:** This file is already in `.gitignore` and should *never* be committed.
-
-### 4\. Run the Project
-
-First, you need to run the fetch script manually to create the `projects.json` file.
+Start the local server:
 
 ```bash
-# 1. Run the fetch script one time
-node ./scripts/get-projects.mjs
-
-# 2. Start the dev server
 npm run dev
+# or
+bun run dev
 ```
 
-Your site should now be running on `http://localhost:5173`.
+Your site will be running on `http://localhost:5173`.
 
------
+---
 
-## 🚀 Deployment
+## 🚀 Deployment & Automation
 
-This project is set up to deploy perfectly on **Vercel**.
+This project is set up to deploy on **Vercel**.
 
-When deploying, you just need to:
+### Vercel Deployment Settings
+1. Set the **Build Command** to: `npm run build`
+2. Set the **Output Directory** to: `dist`
 
-1.  Set the **Build Command** to: `npm run build`
-2.  Set the **Output Directory** to: `dist`
-3.  Add the `VITE_GITHUB_USERNAME` and `VITE_GITHUB_TOKEN` in the **Environment Variables** section of your Vercel project settings.
+### Automated Rebuilds (Vercel Cron Job)
+The site includes a serverless endpoint at `api/cron.ts` to trigger a redeploy when external data updates. To set this up:
 
-Vercel will automatically run the `prebuild` script every time it deploys, so your projects will always be up-to-date with your GitHub profile.
+1. Create a **Deploy Hook** in your Vercel Project Settings (Git -> Deploy Hooks) and copy the URL.
+2. In your Vercel Project Settings, add the following **Environment Variables**:
+   * `DEPLOY_HOOK_URL`: The Deploy Hook URL you just created.
+   * `CRON_SECRET`: A secure random string used to authorize requests.
+3. Configure a cron trigger in your Vercel project configuration (`vercel.json`) or call the `api/cron.ts` endpoint with the authorization header:
+   ```http
+   Authorization: Bearer <your-cron-secret>
+   ```
 
-```
-```
+### 📄 Automated Resume Updates (CI/CD)
+The resume PDF (`public/resume.pdf`) is automatically kept up to date using a CI/CD pipeline:
+1. The LaTeX source code of the resume is hosted in a separate **private repository**.
+2. When changes are pushed to the LaTeX source, a **GitHub Actions workflow** compiles the LaTeX document into `resume.pdf`.
+3. The workflow automatically commits and pushes the compiled PDF into this portfolio repository.
+4. The push triggers Vercel to automatically rebuild and redeploy the site, serving the latest resume immediately.
