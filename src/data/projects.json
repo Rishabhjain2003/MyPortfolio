@@ -1,5 +1,12 @@
 [
   {
+    "title": "shl-copilot",
+    "description": "A stateless conversational agent that helps hiring managers select SHL Individual Test Solutions, served via FastAPI.",
+    "image": "https://repository-images.githubusercontent.com/1286993510/659b34e1-2b91-4ee3-a6c4-9d542a4a2470",
+    "github": "https://github.com/Rishabhjain2003/shl-copilot",
+    "demo": "https://shl-copilot-1.onrender.com/docs"
+  },
+  {
     "title": "DistributedTaskQueueSystem",
     "description": "This project implements a distributed task queue in Python — a system that lets a web API accept long-running jobs and hand them off to background workers, so the API stays responsive while the heavy work happens elsewhere.",
     "image": "https://repository-images.githubusercontent.com/1226585929/b56c631c-85bd-484b-b08b-c16b9cc68c36",
@@ -15,7 +22,7 @@
   },
   {
     "title": "TechBoss",
-    "description": "Tech Boss is a Visual Studio Code extension that leverages Google's Gemini AI to help you modify and generate code intelligently. Simply describe what you want, and let AI do the heavy lifting!",
+    "description": "TechBoss is a VS Code extension with a multi-turn Gemini agent loop that autonomously navigates codebases via tool-calling (workspace index + file retrieval), generates context-aware edits within a dynamic token budget, and surfaces changes through a one-click diff interface for safe acceptance or rollback.",
     "image": "https://repository-images.githubusercontent.com/1091115767/e34cede7-076c-45a1-ab8a-e81e366e63f4",
     "github": "https://github.com/Rishabhjain2003/TechBoss",
     "demo": ""
@@ -23,7 +30,7 @@
   {
     "title": "Codecast",
     "description": "Real-time collaborative code editor with multi-user support in shared rooms, featuring instant synchronization across clients with syntax highlighting.",
-    "image": "https://repository-images.githubusercontent.com/1070810466/4d02594f-843d-4d74-9d1a-60524fe316c0",
+    "image": "https://repository-images.githubusercontent.com/1070810466/79cf5df1-3112-4d8e-be1a-5b302c9ef7e8",
     "github": "https://github.com/Rishabhjain2003/Codecast",
     "demo": "https://codecast-eight.vercel.app"
   },
@@ -33,12 +40,5 @@
     "image": "https://repository-images.githubusercontent.com/1167289270/76f99f3d-206e-4d25-bb9e-0b4b95ca02f7",
     "github": "https://github.com/Rishabhjain2003/AutoSubAI",
     "demo": ""
-  },
-  {
-    "title": "VectorShiftAssignment",
-    "description": "A full-stack pipeline visualization and validation tool built with React Flow and FastAPI. Create node-based workflows with real-time DAG validation, dynamic node abstractions, and visual pipeline analysis.",
-    "image": "https://repository-images.githubusercontent.com/1119995467/9d56f78e-1678-47bb-9d21-f7aebc69446f",
-    "github": "https://github.com/Rishabhjain2003/VectorShiftAssignment",
-    "demo": "https://vectorshift-rouge.vercel.app/"
   }
 ]
