@@ -18,9 +18,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-base text-muted-foreground mb-8 max-w-xl leading-relaxed">
-            I build backend systems that replace manual processes and scale under pressure —
-            REST APIs, automation pipelines, and event-driven architectures. M.Tech CSE at NIT Bhopal.
-            700+ LeetCode problems solved.
+           Backend engineer who fixes broken pipelines and automates the manual work around them. CSE, NIT Bhopal.
           </p>
 
           <div className="flex gap-4 mb-8">
