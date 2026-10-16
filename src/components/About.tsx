@@ -22,12 +22,7 @@ export const About = () => {
             </h2>
 
             <p className="text-muted-foreground mb-6 leading-relaxed text-justify">
-              I build backend systems that replace manual processes and scale under pressure — automation
-              pipelines, REST APIs, and deployment tools that teams actually ship to production. At C-DOT,
-              I engineered a configuration automation tool that cut 4G node deployment time by 60%. At Grid
-              Controller of India, I built a national-scale LSTM forecasting pipeline 2× more accurate than
-              the legacy model. Outside internships, I've independently shipped NovaTrade, TechBossAI, and
-              other production-grade systems.
+              I build backend systems that replace manual processes and fix the ones that break. At Philips, I traced a data-integrity bug in a service-entitlement pipeline to flawed join and status-matching logic, rewrote it, and validated the fix with SQL regression tests. That recovered 4,500+ misclassified records and removed 450K+ spurious join matches. I also repaired a failing AWS Elastic Beanstalk deployment pipeline, so automated releases worked again. At C-DOT, I engineered a configuration automation tool that cut 4G node configuration time by 60%. At Grid Controller of India, I built a national-scale LSTM forecasting pipeline with 2× the accuracy of the legacy model. On my own time, I build distributed systems such as NovaTrade (event-driven trading platform) and TechBossAI (a VS Code coding agent). I’m pursuing an M.Tech in CSE at NIT Bhopal and have solved 700+ LeetCode problems.
             </p>
 
             <div className="space-y-4">
